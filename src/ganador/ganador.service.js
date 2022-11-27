@@ -9,6 +9,7 @@ const find = (req, res = response) => {
     FROM contiendas
     INNER JOIN paises ON paises.id_pais = contiendas.id_pais
     GROUP BY paises.nombre
+    ORDER BY cantidad DESC
    `,
     [],
     function (err, result, fields) {
