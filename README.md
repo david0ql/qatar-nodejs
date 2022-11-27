@@ -2,6 +2,8 @@
 
 ## Instalar dependencias ``` npm i ``` o ``` yarn ```
 
+## Renombrar el archivo ``` .env.template ``` a ``` .env ``` y situar tus variables
+
 ## Correr desarrollo
 
 ```
