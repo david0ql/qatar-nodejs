@@ -1,12 +1,14 @@
 import { createConnection } from 'mysql';
 
+import "dotenv/config.js";
+
 const connection = createConnection({
   host     : 'localhost',
-  user     : 'root',
-  password : 'root',
-  database : 'mundial'
+  user     : process.env.MYSQLUSER,
+  password : process.env.MYSQLPASSWORD,
+  database : process.env.MYSQLDB
 });
  
 connection.connect();
 
-export default connection;
+export  {connection}
