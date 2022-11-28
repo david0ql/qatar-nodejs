@@ -5,7 +5,7 @@ const find = (req, res = response) => {
   //hacer query para buscar todos
   connection.query(
     `
-    SELECT COUNT(contiendas.id_contienda) as cantidad, paises.nombre, contiendas.id_contienda
+    SELECT COUNT(contiendas.id_contienda) as cantidad, paises.nombre
     FROM contiendas
     INNER JOIN paises ON paises.id_pais = contiendas.id_pais
     GROUP BY paises.nombre
